@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gaming Leaderboard</h1>
+    </header>
+
+    <main>
+        <section class="leaderboard">
+            <h2>Rankings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section class="add-score">
+            <h2>Add New Score</h2>
+            <form id="score-form">
+                <input type="text" id="player-name" placeholder="Player Name" required>
+                <input type="number" id="player-score" placeholder="Score" required>
+                <button type="submit">Add Score</button>
+                <button id="download-button">Download CSV</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Gaming Leaderboard Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
